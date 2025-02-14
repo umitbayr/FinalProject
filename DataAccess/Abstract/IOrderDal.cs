@@ -5,15 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Core.DataAccess;
 using Entities.Concrete;
-using Entities.DTOs; // referans ekledik ki kullanabilelim Product ü
 
 namespace DataAccess.Abstract
 {
-    public interface IProductDal : IEntityRepository<Product>
+    public interface IOrderDal : IEntityRepository<Order>
     {
-        List<ProductDetailDto> GetProductDetails();
     }
 }
-
-
-// code refactoring
